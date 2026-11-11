@@ -1,3 +1,39 @@
+# Minimal — guia deste repositório
+
+Tema Jekyll para sites e portefólios no GitHub Pages. O projeto contém layouts Liquid, estilos SCSS, recursos e scripts de verificação. A documentação original do tema está preservada abaixo.
+
+## Preparação local
+
+A gemspec declara `jekyll-theme-minimal` 0.2.0, Ruby >= 2.4 e Jekyll > 3.5 e < 5.0. Estes limites descrevem o ficheiro existente; não são uma recomendação de utilizar versões antigas de Ruby. Confirmar a resolução das dependências no ambiente de desenvolvimento.
+
+Com Ruby e Bundler instalados:
+
+```sh
+bundle install
+bundle exec jekyll serve
+```
+
+Abrir [localhost:4000](http://localhost:4000). Os scripts em `script/` usam uma shell Unix; em Windows, usar um ambiente compatível para esses scripts.
+
+## Onde alterar
+
+- [_config.yml](_config.yml): configuração do site de exemplo.
+- [_layouts](_layouts): layouts das páginas.
+- [_includes](_includes): elementos reutilizáveis do cabeçalho.
+- [_sass](_sass) e [assets/css/style.scss](assets/css/style.scss): estilos.
+- [jekyll-theme-minimal.gemspec](jekyll-theme-minimal.gemspec): metadados e dependências.
+- [script/cibuild](script/cibuild): build, verificações de HTML/Ruby e geração da gem.
+
+Depois de instalar dependências, executar `script/cibuild` numa shell compatível. Alguns validadores podem depender de recursos externos.
+
+## Licença e origem
+
+Preservar [LICENSE](LICENSE) e os créditos do tema. A gemspec identifica a licença CC0-1.0 e o projeto de origem `pages-themes/minimal`. Os badges abaixo referem-se ao projeto de origem, não demonstram o estado dos checks deste repositório.
+
+Documentação revista em 11/11/2026; os comandos foram conferidos nos ficheiros, mas não executados nesta atualização.
+
+---
+
 # The Minimal theme
 
 [![.github/workflows/ci.yaml](https://github.com/pages-themes/minimal/actions/workflows/ci.yaml/badge.svg)](https://github.com/pages-themes/minimal/actions/workflows/ci.yaml) [![Gem Version](https://badge.fury.io/rb/jekyll-theme-minimal.svg)](https://badge.fury.io/rb/jekyll-theme-minimal)
